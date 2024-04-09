@@ -1,0 +1,131 @@
+#new{cursor:pointer;color:#CC0000;background-color:#FFFFFF}
+#new:hover{cursor:pointer;color:#6600FF;background-color:#FFFFCC}
+#joueur1{color:#3300FF; font-weight:bold; font-size:large}
+#joueur2{color:#FF0000; font-weight:bold; font-size:large}
+#joueurinfo1{color:#3300FF; font-weight:bold; font-size:small}
+#joueurinfo2{color:#FF0000; font-weight:bold; font-size:small}
+#rieninfo{font-weight:bold; font-size:small}
+#rien{font-weight:bold; font-size:large}
+* { 
+    box-sizing: border-box;
+}
+#photo{
+  float:left;
+  width:150px; height:120px;
+  background-image:url(photo_hm.png);
+  border-radius:150px;
+  margin-right:90px;
+  top:0;
+}
+a{
+  color:#ADADAD;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: block; text-align:justify;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px; height:auto;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color: black;
+    color:#ADADAD;
+    padding: 15px;
+}
+h1{
+  text-align:center;
+}
+.menu ul{
+  
+  list-style-type:none;
+  margin:0px;
+  height:auto;
+  border: 0px solid black;
+  border-radius:10px;
+  
+}
+.menu li a{
+  margin-bottom:5px; margin-top:2px;
+  display:block;
+  color:#0000;
+  text-decoration: none;
+  border:0px;
+  background-color:#D6D6D6;
+  border-radius:8px;
+  text-align:center;
+}
+
+.menu li a:hover{
+  color:black;
+  background-color:#BFBFBF;
+  font-weight:bold;
+  font-size:18px;
+
+}
+.footer {
+  width:100%;height:80px;
+    background-color:black;
+    color: #ffffff;
+    padding: 15px;
+}
+#facebook{
+  background-image:url(Facebook.png);
+  float:left; width:25px; height:25px;
+}
+#linkedin{
+  background-image:url(linkedin.png);
+  float:left; width:25px; height:25px;
+}
+#viadeo{
+  background-image:url(viadeo.jpg);
+  float:left; width:25px; height:25px; border-radius:50px;
+}
+#google{
+  background-image:url(google.png);
+  float:left; width:25px; height:25px; border-radius:28px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+ 
+
+@media only screen and (max-width:768px){
+  /*for mobile phones:*/
+  [class*="col-"]{width:100%;}
+}
+
+.map{
+  float:left;
+  background-color:white; height:auto;
+}
+.article{
+  background-color:#FEFFFE; height:auto;
+}
+
+.pub{
+  float:left;
+  background-color:white; height:auto;
+}
+.google{float:left;
+  background-color:white; height:auto;
+}
+.jeux{float:left;
+  background-color:white; height:auto;
+}
