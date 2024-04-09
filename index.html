@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morpion</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+</head>
+<body onLoad="bonjour()" onunload="aurevoir()" style="color:black;">
+    
+    <section id="Morpion">
+        <div class="container">
+            <div class="row">
+             
+      
+                <div class="col-6 article">
+                    <div class="col-12 text1">
+
+                        <div align="center">
+                            <form name="morpion" method="post" action="">
+                                <p>
+                                    <input type="button" name="joueursuiv" value="">
+                                    
+                                    <a href="#"><input type="button" onClick="newgame()" id="new" value="Nouvelle partie" style="margin-left: 10px;"></a>
+                                </p>
+                                <p>&nbsp;</p>
+                                <table border="4" cellspacing="2">
+                                <tr>
+                                    <td><input name="case0" type="button" value=" " onClick="jouer('0')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case1" type="button" id="case1" value=" " onClick="jouer('1')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case2" type="button" id="case2" value=" " onClick="jouer('2')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case3" type="button" value=" " onClick="jouer('3')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case4" type="button" value=" " onClick="jouer('4')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case5" type="button" value=" " onClick="jouer('5')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case6" type="button" value=" " onClick="jouer('6')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case7" type="button" value=" " onClick="jouer('7')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case8" type="button" value=" " onClick="jouer('8')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case9" type="button" value=" " onClick="jouer('9')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                </tr>
+                                <tr>
+                                    <td><input name="case10" type="button" value=" " onClick="jouer('10')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case11" type="button" value=" " onClick="jouer('11')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case12" type="button" value=" " onClick="jouer('12')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case13" type="button" value=" " onClick="jouer('13')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case14" type="button" value=" " onClick="jouer('14')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case15" type="button" value=" " onClick="jouer('15')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case16" type="button" value=" " onClick="jouer('16')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case17" type="button" value=" " onClick="jouer('17')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case18" type="button" value=" " onClick="jouer('18')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case19" type="button" value=" " onClick="jouer('19')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                </tr>
+                                <tr>
+                                    <td><input name="case20" type="button" value=" " onClick="jouer('20')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case21" type="button" value=" " onClick="jouer('21')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case22" type="button" value=" " onClick="jouer('22')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case23" type="button" value=" " onClick="jouer('23')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case24" type="button" value=" " onClick="jouer('24')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case25" type="button" value=" " onClick="jouer('25')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case26" type="button" value=" " onClick="jouer('26')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case27" type="button" value=" " onClick="jouer('27')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case28" type="button" value=" " onClick="jouer('28')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case29" type="button" value=" " onClick="jouer('29')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                </tr>
+                                <tr>
+                                    <td><input name="case30" type="button" value=" " onClick="jouer('30')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case31" type="button" value=" " onClick="jouer('31')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case32" type="button" value=" " onClick="jouer('32')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case33" type="button" value=" " onClick="jouer('33')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case34" type="button" value=" " onClick="jouer('34')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case35" type="button" value=" " onClick="jouer('35')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case36" type="button" value=" " onClick="jouer('36')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case37" type="button" value=" " onClick="jouer('37')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case38" type="button" value=" " onClick="jouer('38')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case39" type="button" value=" " onClick="jouer('39')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                </tr>
+                                <tr>
+                                    <td><input name="case40" type="button" value=" " onClick="jouer('40')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case41" type="button" value=" " onClick="jouer('41')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case42" type="button" value=" " onClick="jouer('42')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case43" type="button" value=" " onClick="jouer('43')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case44" type="button" value=" " onClick="jouer('44')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case45" type="button" value=" " onClick="jouer('45')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case46" type="button" value=" " onClick="jouer('46')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case47" type="button" value=" " onClick="jouer('47')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case48" type="button" value=" " onClick="jouer('48')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case49" type="button" value=" " onClick="jouer('49')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                </tr>
+                                <tr>
+                                    <td><input name="case50" type="button" value=" " onClick="jouer('50')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case51" type="button" value=" " onClick="jouer('51')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case52" type="button" value=" " onClick="jouer('52')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case53" type="button" value=" " onClick="jouer('53')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case54" type="button" value=" " onClick="jouer('54')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case55" type="button" value=" " onClick="jouer('55')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case56" type="button" value=" " onClick="jouer('56')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case57" type="button" value=" " onClick="jouer('57')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case58" type="button" value=" " onClick="jouer('58')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case59" type="button" value=" " onClick="jouer('59')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                </tr>
+                                <tr>
+                                    <td><input name="case60" type="button" value=" " onClick="jouer('60')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case61" type="button" value=" " onClick="jouer('61')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case62" type="button" value=" " onClick="jouer('62')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case63" type="button" value=" " onClick="jouer('63')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case64" type="button" value=" " onClick="jouer('64')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case65" type="button" value=" " onClick="jouer('65')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case66" type="button" value=" " onClick="jouer('66')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case67" type="button" value=" " onClick="jouer('67')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case68" type="button" value=" " onClick="jouer('68')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case69" type="button" value=" " onClick="jouer('69')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                </tr>
+                                <tr>
+                                    <td><input name="case70" type="button" value=" " onClick="jouer('70')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case71" type="button" value=" " onClick="jouer('71')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case72" type="button" value=" " onClick="jouer('72')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case73" type="button" value=" " onClick="jouer('73')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case74" type="button" value=" " onClick="jouer('74')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case75" type="button" value=" " onClick="jouer('75')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case76" type="button" value=" " onClick="jouer('76')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case77" type="button" value=" " onClick="jouer('77')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case78" type="button" value=" " onClick="jouer('78')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case79" type="button" value=" " onClick="jouer('79')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                </tr>
+                                <tr>
+                                    <td><input name="case80" type="button" value=" " onClick="jouer('80')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case81" type="button" value=" " onClick="jouer('81')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case82" type="button" value=" " onClick="jouer('82')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case83" type="button" value=" " onClick="jouer('83')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case84" type="button" value=" " onClick="jouer('84')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case85" type="button" value=" " onClick="jouer('85')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case86" type="button" value=" " onClick="jouer('86')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case87" type="button" value=" " onClick="jouer('87')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case88" type="button" value=" " onClick="jouer('88')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case89" type="button" value=" " onClick="jouer('89')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                </tr>
+                                <tr>
+                                    <td><input name="case90" type="button" value=" " onClick="jouer('90')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case91" type="button" value=" " onClick="jouer('91')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case92" type="button" value=" " onClick="jouer('92')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case93" type="button" value=" " onClick="jouer('93')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case94" type="button" value=" " onClick="jouer('94')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case95" type="button" value=" " onClick="jouer('95')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case96" type="button" value=" " onClick="jouer('96')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case97" type="button" value=" " onClick="jouer('97')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case98" type="button" value=" " onClick="jouer('98')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                    <td><input name="case99" type="button" value=" " onClick="jouer('99')" style="width: 30px; height: 30px; background-color: grey"></td>
+                                </tr>
+                                </table>
+                                <p>&nbsp;</p>
+                            </form>
+  
+                            <form name="morpionscore" method="post" action="">
+                                <p>Nombre de victoires du joueur1 : 
+                                    <input name="info1" type="text" value="" size="3" disabled>
+                                </p>
+                                <p>Nombre de victoires du joueur2 :
+                                    <input name="info2" type="text" value="" size="3" disabled>
+                                </p>
+                                <p>Nombre de matchs nuls:
+                                    <input name="info3" type="text" value="" size="3" disabled>
+                                </p>
+                            </form>
+                                <p>&nbsp;</p>
+                            <form action="" method="post" name="optionsjoueurs">
+                                <p><u><strong>Type de joueur : </strong></u></p>
+                                <p><strong>Joueur 1 : 
+                                        </strong>
+                                    <select name="jo1">
+                                        <option value="0">Humain</option>
+                                    </select>
+                                </p>
+                                <p><strong>Joueur 2 :
+                                    </strong>
+                                    <select name="jo2" onClick="jouer2()">
+                                    <option value="1">Ordinateur</option>
+                                    <option value="0">Humain</option>
+                                    </select>
+                                </p>
+                            </form>
+                                <p>&nbsp;</p>
+                            <form action="" method="post" name="difficulte">
+                                <p><u><strong>Difficulté : </strong></u></p>
+                                <p>
+                                    <select name="diff">
+                                        <option value="5">Tr&egrave;s facile</option>
+                                        <option value="4">Facile</option>
+                                        <option value="3">Moyen</option>
+                                        <option value="1">Difficile</option>
+                                    </select>
+                                </p>
+                            </form>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p><code>&copy; Hervé MBO</code></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
